@@ -5,8 +5,8 @@ import { UsersModule } from './users/users.module';
 import { SequelizeModule } from '@nestjs/sequelize';
 
 @Module({
-  imports: [
-    UsersModule,
+  imports: [  
+    UsersModule, 
     SequelizeModule.forRoot({
       dialect: 'postgres',
       database: 'postgres',
